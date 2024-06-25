@@ -1,3 +1,3 @@
 export  const stringCalculator = (input: string) : number  => {
- return 0;
+ return 1;
 }
