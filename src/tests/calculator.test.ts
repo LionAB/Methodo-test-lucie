@@ -16,4 +16,9 @@ describe('String Calculator', () => {
     it("should return the sum of the numbers when they conatains '\n'", () => {
         expect(stringCalculator('1\n2,3')).toBe(6);
     });
+    it('should return the sum of the numbers are separated by the same delimiter indicated by // (separate line symbol)', () => {
+        expect(stringCalculator('//;\n1;3')).toBe(4);
+        expect(stringCalculator('//|\n1|2|3')).toBe(6);
+        expect(stringCalculator('//sep\n2sep5')).toBe(7);
+    });  
 });
