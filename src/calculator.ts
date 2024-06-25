@@ -8,7 +8,9 @@ export  const stringCalculator = (input: string) : number  => {
         const delimiter = input.slice(2, delimiterEndIndex);  
         input = input.slice(delimiterEndIndex + 1);  
 
-    
+        if (!input.includes(delimiter)) {
+            throw new Error('Invalid input');
+        }
         while (input.includes(delimiter)) {
             input = input.replace(delimiter, ',');
         }
