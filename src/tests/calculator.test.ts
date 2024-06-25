@@ -21,5 +21,8 @@ describe('String Calculator', () => {
         expect(stringCalculator('//|\n1|2|3')).toBe(6);
         expect(stringCalculator('//sep\n2sep5')).toBe(7);
     }); 
+    it('should throw an error if the input is invalid', () => {
+        expect(() => stringCalculator('//;\n1,3')).toThrow('Invalid input');
+    });
     
 });
