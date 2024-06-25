@@ -10,4 +10,7 @@ describe("fizzBuzz", () => {
     it ("should return Buzz when the parameter is divisible by 5", () => {
         expect(fizzBuzz(5)).toBe("Buzz");
     });
+    it ("should return FizzBuzz when the parameter is divisible by 3 and 5", () => {
+        expect(fizzBuzz(15)).toBe("FizzBuzz");
+    });
 });
