@@ -20,5 +20,6 @@ describe('String Calculator', () => {
         expect(stringCalculator('//;\n1;3')).toBe(4);
         expect(stringCalculator('//|\n1|2|3')).toBe(6);
         expect(stringCalculator('//sep\n2sep5')).toBe(7);
-    });  
+    }); 
+    
 });
