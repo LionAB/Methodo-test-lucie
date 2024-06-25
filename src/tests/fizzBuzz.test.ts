@@ -13,4 +13,7 @@ describe("fizzBuzz", () => {
     it ("should return FizzBuzz when the parameter is divisible by 3 and 5", () => {
         expect(fizzBuzz(15)).toBe("FizzBuzz");
     });
+    it ("should return NOPE ! when the parameter is not divisible by 3 or 5", () => {
+        expect(fizzBuzz(7)).toBe("NOPE !");
+    });
 });
