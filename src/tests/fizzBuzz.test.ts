@@ -1,4 +1,4 @@
-import { fizzBuzz } from "../index";
+import { fizzBuzz } from "../fizzBuzz";
 
 describe("fizzBuzz", () => {
     it("should return of type string  ", () => {
